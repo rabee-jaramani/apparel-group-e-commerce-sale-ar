@@ -55,7 +55,7 @@ export const data_list = [
     brand: 'his & hers',
     logo: his_and_hers_logo,
     offer1: 'خصم ثابت 60%',
-    offer2: '',
+    offer2: '-',
     link: 'https://www.hishers.com/ae/ar/',
   },
   {
@@ -71,7 +71,7 @@ export const data_list = [
     brand: 'r&b',
     logo: r_and_b_logo,
     offer1: 'خصم 30-70%',
-    offer2: '',
+    offer2: '-',
     link: 'https://ar-ae.randbfashion.com/',
   },
   {

@@ -8,7 +8,11 @@ export default function Card(props) {
       {/* <div className="title">{props.brand}</div> */}
       <img src={props.logo} alt="logo" />
       <div className="sale1">{props.offer1}</div>
-      <div className="sale2">{props.offer2}</div>
+      {props.brand === 'r&b' || props.brand === 'his & hers'
+        ? <div className="sale2" style={{ color: '#fff' }}>{props.offer2}</div>
+        : <div className="sale2">{props.offer2}</div>}
+
+      <div className="terms" style={{ direction: "ltr" }}>تطبق الشروط والأحكام*</div>
       <a
         className="shop-now-a"
         href={props.link}
@@ -20,7 +24,7 @@ export default function Card(props) {
           <i className="fa-solid fa-tags"></i>
         </div>
       </a>
-      <div className="terms">*T&C Apply</div>
+
     </div>
   );
 }
